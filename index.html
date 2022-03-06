@@ -834,26 +834,20 @@ body, html {
 </style>
 
 <!-- Contact Section -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+<div class="w3-container w3-light-grey" style="padding:128px 16px;" id="contact">
   <h3 class="w3-center">CONTACT</h3>
   <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+  <hr class="new1">
+  <style>
+    hr.new1 {
+      border-top: 0.5px solid black;
+    }
+  </style>
   <div style="margin-top:48px">
     <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> 99 Raintree Crescent, Oak Ridges, Ontario</p>
-    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: 647-886-7191</p>
-    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: marcosbackyardswimming@bell.net</p>
+    <p><a href="tel:6478867191"><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i></a> Phone: 647-886-7191</p>
+    <p><a href="mailto:marcosbackyardswimming@bell.net"><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i></a> Email: marcosbackyardswimming@bell.net</p>
     <br>
-    <form action="/contact" method="POST">
-      <p><input class="w3-input w3-border" type="text" placeholder="Name: John Doe" required name="name"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Email: johndoe@gmail.com" required name="email"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Phone Number: 123 456 789" required name="number"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Subject: Book My Children" required name="subject"></p>
-      <p><textarea class="w3-input w3-border" placeholder="Message: Hey Marco!" required name="message"></textarea></p>
-      <p>
-        <button class="w3-button w3-black" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form>
     <!-- Image of location/map -->
   </div>
 </div>
